@@ -1,0 +1,54 @@
+CREATE DATABASE map_lpp_db;
+
+USE map_lpp_db;
+
+SELECT DATABASE();
+
+CREATE TABLE sku_table (
+    PN VARCHAR(100),
+    SKU VARCHAR(100) NOT NULL,
+    PRIMARY KEY (SKU)
+);
+
+CREATE TABLE pl_table (
+    PL VARCHAR(150) NOT NULL,
+    SKU VARCHAR(100) NOT NULL,
+    SUB_CATEGORY VARCHAR(100),
+    CATEGORY VARCHAR(100),
+    PRIMARY KEY (PL, SKU)
+);
+
+CREATE TABLE seller_mapping_table (
+    Seller_Name VARCHAR(255) NOT NULL,
+    Homologated_Name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (Seller_Name)
+);
+
+
+CREATE TABLE price_list_table (
+    PL VARCHAR(150) NOT NULL,
+    SKU VARCHAR(100) NOT NULL,
+    MAP DECIMAL(12,2),
+    LPP DECIMAL(12,2),
+    PRIMARY KEY (PL, SKU)
+);
+
+CREATE TABLE category_mapping_table (
+    Category VARCHAR(100),
+    sub_category VARCHAR(100),
+    PL VARCHAR(150) NOT NULL,
+    SKU VARCHAR(100) NOT NULL,
+    PRIMARY KEY (PL, SKU)
+);
+
+CREATE TABLE promotion_table (
+    PL VARCHAR(150) NOT NULL,
+    SKU VARCHAR(100) NOT NULL,
+    Season VARCHAR(20) NOT NULL,
+    Promotion DECIMAL(12,2),
+    PRIMARY KEY (PL, SKU, Season)
+);
+
+SHOW TABLES;
+
+SHOW VARIABLES LIKE 'local_infile';

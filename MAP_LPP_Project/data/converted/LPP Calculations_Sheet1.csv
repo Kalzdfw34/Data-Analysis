@@ -1,0 +1,23 @@
+﻿Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8
+,,LPP Calculations ,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,Sub_category,Hp,Dell,,,,,
+,1. Laptop,0.034,0.078,,,,,
+,2. Monitor,0.012,0.056,,,,,
+,3. Toner,0.091,0.023,,,,,
+,4. Laserjet,0.065,0.035,,,,,
+,5. Inkjet,0.012,0.056,,,,,
+,6. Desktop,0.091,0.023,,340.0,,,
+,7. Ink,0.065,0.035,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,Sample calculation,,,,,,
+,,MAP,10000,,,,,28243.0
+,,LPP (Percentage),0.034,0.034,,,,0.091
+,,Reduction ,340,,,,,
+,,,,,,,,
+,,LPP = ,9660,,,,,
